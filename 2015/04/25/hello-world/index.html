@@ -4,43 +4,25 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>CSS基础（三） | Heavenly psycho</title>
+    <title>Hello World | Heavenly psycho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Aru">
     
 
     
-    <meta name="description" content="三种布局模型Flow流动模型/Layer层模型/Float浮动模型
-流动模型默认的网页布局模式块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布内联元素都会在所处的包含元素内从左到右水平分布显示
-浮动模型float:left;
-层布局模型定位（positioning）
-
-绝对定位（position:absolute）
-相对定位（position:relative）
-固定定位（position">
+    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS基础（三）">
-<meta property="og:url" content="http://yoursite.com/2015/04/25/CSS基础3/index.html">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="http://yoursite.com/2015/04/25/hello-world/index.html">
 <meta property="og:site_name" content="Heavenly psycho">
-<meta property="og:description" content="三种布局模型Flow流动模型/Layer层模型/Float浮动模型
-流动模型默认的网页布局模式块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布内联元素都会在所处的包含元素内从左到右水平分布显示
-浮动模型float:left;
-层布局模型定位（positioning）
-
-绝对定位（position:absolute）
-相对定位（position:relative）
-固定定位（position">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS基础（三）">
-<meta name="twitter:description" content="三种布局模型Flow流动模型/Layer层模型/Float浮动模型
-流动模型默认的网页布局模式块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布内联元素都会在所处的包含元素内从左到右水平分布显示
-浮动模型float:left;
-层布局模型定位（positioning）
-
-绝对定位（position:absolute）
-相对定位（position:relative）
-固定定位（position">
+<meta name="twitter:title" content="Hello World">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick">
 
     
     <link rel="alternative" href="/atom.xml" title="Heavenly psycho" type="application/atom+xml">
@@ -100,14 +82,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/04/25/CSS基础3/" title="CSS基础（三）" itemprop="url">CSS基础（三）</a>
+      <a href="/2015/04/25/hello-world/" title="Hello World" itemprop="url">Hello World</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Aru" target="_blank" itemprop="author">Aru</a>
 		
   <p class="article-time">
-    <time datetime="2015-04-25T02:07:43.000Z" itemprop="datePublished"> 发表于 2015-04-25</time>
+    <time datetime="2015-04-25T02:45:07.000Z" itemprop="datePublished"> 发表于 2015-04-25</time>
     
   </p>
 </header>
@@ -116,45 +98,24 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#三种布局模型"><span class="toc-number">1.</span> <span class="toc-text">三种布局模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#流动模型"><span class="toc-number">1.1.</span> <span class="toc-text">流动模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#浮动模型"><span class="toc-number">1.2.</span> <span class="toc-text">浮动模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#层布局模型"><span class="toc-number">1.3.</span> <span class="toc-text">层布局模型</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<h2 id="三种布局模型">三种布局模型</h2><p>Flow流动模型/Layer层模型/Float浮动模型</p>
-<h3 id="流动模型">流动模型</h3><p>默认的网页布局模式<br>块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布<br>内联元素都会在所处的包含元素内从左到右水平分布显示</p>
-<h3 id="浮动模型">浮动模型</h3><pre><code><span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;
-</code></pre><h3 id="层布局模型">层布局模型</h3><p>定位（positioning）</p>
-<ul>
-<li>绝对定位（position:absolute）</li>
-<li>相对定位（position:relative）</li>
-<li>固定定位（position:fixed）</li>
-</ul>
-<p>绝对定位：<em>将元素从文档流中拖出来，然后使用left/right/top/bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。</em></p>
-<p>相对定位：<em>元素在正常文档中得偏移位置，首先按float方式生成一个元素（元素像层一样浮动了起来），然后相对于以前位置的移动，移动方向和幅度由属性确定，偏移前的位置保留不动。</em></p>
-<p>固定定位：<em>与absolute的定位相似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。不随滚动条和文档流改变，始终位于浏览器窗口内视图的某个位置。</em></p>
-<p>relative与absolute组合使用</p>
-<ul>
-<li>参照定位的元素必须是相对定位元素的前辈元素</li>
-<li>参照定位元素：position:relative</li>
-<li>定位元素：position:absolute</li>
-</ul>
-<p><strong>设置属性值时：上右下左（可缩写）</strong></p>
-<p>快捷写法顺序：<br>    font: font-style | font-variant | font-weight | font-size | line-height | font-family</p>
+		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/HTML-CSS/">HTML/CSS</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/CSS/">CSS</a>
-  </div>
 
 </div>
 
@@ -162,7 +123,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/04/25/CSS基础3/" data-title="CSS基础（三） | Heavenly psycho" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/04/25/hello-world/" data-title="Hello World | Heavenly psycho" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -188,7 +149,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/04/25/CSS基础3/" data-title="CSS基础（三）" data-url="http://yoursite.com/2015/04/25/CSS基础3/"></div>
+	<div class="ds-thread" data-thread-key="2015/04/25/hello-world/" data-title="Hello World" data-url="http://yoursite.com/2015/04/25/hello-world/"></div>
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
     var duoshuoQuery = {short_name:'undefined'};
@@ -211,7 +172,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#三种布局模型"><span class="toc-number">1.</span> <span class="toc-text">三种布局模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#流动模型"><span class="toc-number">1.1.</span> <span class="toc-text">流动模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#浮动模型"><span class="toc-number">1.2.</span> <span class="toc-text">浮动模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#层布局模型"><span class="toc-number">1.3.</span> <span class="toc-text">层布局模型</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
  
   </div>
 
@@ -225,7 +186,7 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/HTML-CSS/" title="HTML/CSS">HTML/CSS<sup>4</sup></a></li>
+			<li><a href="/categories/HTML-CSS/" title="HTML/CSS">HTML/CSS<sup>3</sup></a></li>
 		  
 		
 		  
@@ -242,7 +203,7 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/CSS/" title="CSS">CSS<sup>3</sup></a></li>
+				<li><a href="/tags/CSS/" title="CSS">CSS<sup>2</sup></a></li>
 			
 		
 			
