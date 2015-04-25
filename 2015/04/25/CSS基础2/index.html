@@ -4,25 +4,58 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | Heavenly psycho</title>
+    <title>CSS基础（二） | Heavenly psycho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Aru">
     
 
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="排版常用元素
+font-family
+font-size
+color
+font-weight
+font-style
+text-decoration:underline
+text-decoration:line-through
+text-indent:2em
+line-height:Xem
+letter-spacing:
+word-spacing:
+text-align:center/left/ri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2015/04/20/hello-world/index.html">
+<meta property="og:title" content="CSS基础（二）">
+<meta property="og:url" content="http://yoursite.com/2015/04/25/CSS基础2/index.html">
 <meta property="og:site_name" content="Heavenly psycho">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta property="og:description" content="排版常用元素
+font-family
+font-size
+color
+font-weight
+font-style
+text-decoration:underline
+text-decoration:line-through
+text-indent:2em
+line-height:Xem
+letter-spacing:
+word-spacing:
+text-align:center/left/ri">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="CSS基础（二）">
+<meta name="twitter:description" content="排版常用元素
+font-family
+font-size
+color
+font-weight
+font-style
+text-decoration:underline
+text-decoration:line-through
+text-indent:2em
+line-height:Xem
+letter-spacing:
+word-spacing:
+text-align:center/left/ri">
 
     
     <link rel="alternative" href="/atom.xml" title="Heavenly psycho" type="application/atom+xml">
@@ -82,14 +115,14 @@ Quick">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/04/20/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2015/04/25/CSS基础2/" title="CSS基础（二）" itemprop="url">CSS基础（二）</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Aru" target="_blank" itemprop="author">Aru</a>
 		
   <p class="article-time">
-    <time datetime="2015-04-20T06:03:01.000Z" itemprop="datePublished"> 发表于 2015-04-20</time>
+    <time datetime="2015-04-25T01:50:01.000Z" itemprop="datePublished"> 发表于 2015-04-25</time>
     
   </p>
 </header>
@@ -98,24 +131,77 @@ Quick">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#排版常用元素"><span class="toc-number">1.</span> <span class="toc-text">排版常用元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见元素分类"><span class="toc-number">2.</span> <span class="toc-text">常见元素分类</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number"></span> <span class="toc-text">…、、、、、、 、</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#undefined"><span class="toc-number">0.0.0.0.1.</span> <span class="toc-text">、、、、、、 、</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内联元素转换为块状元素"><span class="toc-number">0.1.</span> <span class="toc-text">内联元素转换为块状元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转换为内联元素"><span class="toc-number">0.2.</span> <span class="toc-text">转换为内联元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转换为内联块状元素"><span class="toc-number">0.3.</span> <span class="toc-text">转换为内联块状元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于盒模型"><span class="toc-number">1.</span> <span class="toc-text">关于盒模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见div标签"><span class="toc-number">1.1.</span> <span class="toc-text">常见div标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#边框"><span class="toc-number">1.2.</span> <span class="toc-text">边框</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#宽度和高度"><span class="toc-number">1.3.</span> <span class="toc-text">宽度和高度</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<h2 id="排版常用元素">排版常用元素</h2><ul>
+<li>font-family</li>
+<li>font-size</li>
+<li>color</li>
+<li>font-weight</li>
+<li>font-style</li>
+<li>text-decoration:underline</li>
+<li>text-decoration:line-through</li>
+<li>text-indent:2em</li>
+<li>line-height:Xem</li>
+<li>letter-spacing:</li>
+<li>word-spacing:</li>
+<li>text-align:center/left/right</li>
+</ul>
+<h2 id="常见元素分类">常见元素分类</h2><p>块状元素、内联元素和内联块状元素</p>
+<p>常用的块状元素有：</p>
+<blockquote>
+<p><div>、<p>、</p><h1>…<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> 、<form></form></blockquote></address></table></dl></ul></ol></h6></h1></div></p>
+</blockquote>
+<p>常用的内联元素有：</p>
+<blockquote>
+<p><a>、<span>、<br>、<i>、<em>、<strong>、<label>、<q>、<var>、<cite>、<code></code></cite></var></q></label></strong></em></i></span></a></p>
+</blockquote>
+<p>常用的内联块状元素有：</p>
+<blockquote>
+<p><img>、<input></p>
+</blockquote>
+<h3 id="内联元素转换为块状元素">内联元素转换为块状元素</h3><pre><code><span class="tag">a</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;}</span>
+</code></pre><p>块级元素特点：</p>
+<p>1.每个块级元素都从新的一行开始，并且其后的元素也另起一行。（真霸道，一个块级元素独占一行）</p>
+<p>2.元素的高度、宽度、行高以及顶和底边距都可设置。</p>
+<p>3.元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度。</p>
+<h3 id="转换为内联元素">转换为内联元素</h3><pre><code><span class="label">diaplay:</span>inline
+</code></pre><p>内联元素特点：</p>
+<p>1.和其他元素都在一行上；</p>
+<p>2.元素的高度、宽度、行高及顶部和底部边距不可设置；</p>
+<p>3.元素的宽度就是它包含的文字或图片的宽度，不可改变。</p>
+<h3 id="转换为内联块状元素">转换为内联块状元素</h3><pre><code>display:<span class="keyword">inline</span>-<span class="keyword">block</span>
+</code></pre><p>inline-block元素特点：</p>
+<p>1.和其他元素都在一行上；</p>
+<p>2.元素的高度、宽度、行高以及顶和底边距都可设置。</p>
+<h2 id="关于盒模型">关于盒模型</h2><h3 id="常见div标签">常见div标签</h3><ul>
+<li>padding-top/left/right/bottom</li>
+<li>margin</li>
+<li>border</li>
+</ul>
+<h3 id="边框">边框</h3><p>border-style（边框样式）常见样式有：</p>
+<p>dashed（虚线）| dotted（点线）| solid（实线）</p>
+<p>border-top/left/right/bottom</p>
+<h3 id="宽度和高度">宽度和高度</h3><p>盒模型宽度和高度和我们平常所说的物体的宽度和高度理解是不一样的，css内定义的宽（width）和高（height），指的是填充以里的内容范围。</p>
+<p>因此一个元素实际宽度（盒子的宽度）=左边界+左边框+左填充+内容宽度+右填充+右边框+右边界。</p>
+<p>总结一下：padding和margin的区别，padding在边框里，margin在边框外。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/HTML-CSS/">HTML/CSS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/CSS/">CSS</a>
+  </div>
 
 </div>
 
@@ -123,7 +209,7 @@ Quick">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/04/20/hello-world/" data-title="Hello World | Heavenly psycho" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/04/25/CSS基础2/" data-title="CSS基础（二） | Heavenly psycho" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -136,19 +222,11 @@ Quick">
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/04/23/蔡康永说话之道/" title="蔡康永说话之道读书笔记（一）">
-  <strong>上一篇：</strong><br/>
-  <span>
-  蔡康永说话之道读书笔记（一）</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/04/20/html基础/"  title="HTML基础知识">
+<a href="/2015/04/23/hello-world/"  title="Hello World">
  <strong>下一篇：</strong><br/> 
- <span>HTML基础知识
+ <span>Hello World
 </span>
 </a>
 </div>
@@ -157,7 +235,7 @@ Quick">
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/04/20/hello-world/" data-title="Hello World" data-url="http://yoursite.com/2015/04/20/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="2015/04/25/CSS基础2/" data-title="CSS基础（二）" data-url="http://yoursite.com/2015/04/25/CSS基础2/"></div>
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
     var duoshuoQuery = {short_name:'undefined'};
@@ -180,7 +258,7 @@ Quick">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#排版常用元素"><span class="toc-number">1.</span> <span class="toc-text">排版常用元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见元素分类"><span class="toc-number">2.</span> <span class="toc-text">常见元素分类</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number"></span> <span class="toc-text">…、、、、、、 、</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#undefined"><span class="toc-number">0.0.0.0.1.</span> <span class="toc-text">、、、、、、 、</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内联元素转换为块状元素"><span class="toc-number">0.1.</span> <span class="toc-text">内联元素转换为块状元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转换为内联元素"><span class="toc-number">0.2.</span> <span class="toc-text">转换为内联元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转换为内联块状元素"><span class="toc-number">0.3.</span> <span class="toc-text">转换为内联块状元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于盒模型"><span class="toc-number">1.</span> <span class="toc-text">关于盒模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见div标签"><span class="toc-number">1.1.</span> <span class="toc-text">常见div标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#边框"><span class="toc-number">1.2.</span> <span class="toc-text">边框</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#宽度和高度"><span class="toc-number">1.3.</span> <span class="toc-text">宽度和高度</span></a></li></ol></li></ol>
  
   </div>
 
@@ -194,7 +272,7 @@ Quick">
 		<ul>
 		
 		  
-			<li><a href="/categories/HTML-CSS/" title="HTML/CSS">HTML/CSS<sup>2</sup></a></li>
+			<li><a href="/categories/HTML-CSS/" title="HTML/CSS">HTML/CSS<sup>3</sup></a></li>
 		  
 		
 		  
@@ -211,6 +289,10 @@ Quick">
 		<ul class="clearfix">
 		
 			
+				<li><a href="/tags/CSS/" title="CSS">CSS<sup>2</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/HTML/" title="HTML">HTML<sup>1</sup></a></li>
 			
 		
@@ -224,10 +306,6 @@ Quick">
 		
 			
 				<li><a href="/tags/读书笔记/" title="读书笔记">读书笔记<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/CSS/" title="CSS">CSS<sup>1</sup></a></li>
 			
 		
 		</ul>
