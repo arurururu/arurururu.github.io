@@ -11,15 +11,45 @@
     
 
     
-    <meta name="description" content="之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。利用CSS则很容易实现的，以下是CSS代码：    {    margin: 0;    padding: 0;    list-style: none;    }    body{    background: #1f1f1f;    }    .">
+    <meta name="description" content="之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。利用CSS则很容易实现的，以下是CSS代码：
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+body{
+background: #1f1f1f;
+}
+.character360{
+width:220px;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS效果之鼠标触发头像360度旋转">
 <meta property="og:url" content="http://yoursite.com/2015/08/10/CSS效果之鼠标触发头像360度旋转/index.html">
 <meta property="og:site_name" content="Heavenly psycho">
-<meta property="og:description" content="之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。利用CSS则很容易实现的，以下是CSS代码：    {    margin: 0;    padding: 0;    list-style: none;    }    body{    background: #1f1f1f;    }    .">
+<meta property="og:description" content="之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。利用CSS则很容易实现的，以下是CSS代码：
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+body{
+background: #1f1f1f;
+}
+.character360{
+width:220px;">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS效果之鼠标触发头像360度旋转">
-<meta name="twitter:description" content="之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。利用CSS则很容易实现的，以下是CSS代码：    {    margin: 0;    padding: 0;    list-style: none;    }    body{    background: #1f1f1f;    }    .">
+<meta name="twitter:description" content="之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。利用CSS则很容易实现的，以下是CSS代码：
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+body{
+background: #1f1f1f;
+}
+.character360{
+width:220px;">
 
     
     <link rel="alternative" href="/atom.xml" title="Heavenly psycho" type="application/atom+xml">
@@ -98,12 +128,31 @@
 		
 		</div>
 		
-		<p>之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。<br>利用CSS则很容易实现的，以下是CSS代码：<br>    <em>{<br>    margin: 0;<br>    padding: 0;<br>    list-style: none;<br>    }<br>    body{<br>    background: #1f1f1f;<br>    }<br>    .character360{<br>    width:220px;<br>    height: 220px;<br>    margin: 80px auto 0 auto;<br>    background: url(‘bg.jpg’) no-repeat ;<br>    -webkit-background-size: 220px 220px;<br>    -moz-background-size: 220px 220px;<br>    background-size: 220px 220px;<br>    -webkit-border-radius: 110px;/</em>定义圆角边框，即以多少为半径的圆角<em>/<br>    border-radius: 110px;<br>    /</em> transition 是过渡属性 前缀是不同浏览器支持不一样 */</p>
-<pre><code><span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> -webkit-transform <span class="number">0.5s</span> ease-out</span></span>; 
+		<p>之前看到的一个在博客上使用的比较多，也挺有趣的一个效果。演示的话，就是我博客底部那个头像呈现出来的效果，鼠标移至头像，会360度旋转，离开则归回原位。<br>利用CSS则很容易实现的，以下是CSS代码：</p>
+<pre><code>*<span class="rules">{
+<span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;
+}</span>
+<span class="tag">body</span><span class="rules">{
+<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#1f1f1f</span></span></span>;
+}</span>
+<span class="class">.character360</span><span class="rules">{
+<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">220px</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">220px</span></span></span>;
+<span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">80px</span> auto <span class="number">0</span> auto</span></span>;
+<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">'bg.jpg'</span>) no-repeat </span></span>;
+<span class="rule"><span class="attribute">-webkit-background-size</span>:<span class="value"> <span class="number">220px</span> <span class="number">220px</span></span></span>;
+<span class="rule"><span class="attribute">-moz-background-size</span>:<span class="value"> <span class="number">220px</span> <span class="number">220px</span></span></span>;
+<span class="rule"><span class="attribute">background-size</span>:<span class="value"> <span class="number">220px</span> <span class="number">220px</span></span></span>;
+<span class="rule"><span class="attribute">-webkit-border-radius</span>:<span class="value"> <span class="number">110px</span></span></span>;<span class="comment">/*定义圆角边框，即以多少为半径的圆角*/</span>
+<span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">110px</span></span></span>;
+<span class="comment">/* transition 是过渡属性 前缀是不同浏览器支持不一样 */</span>
+<span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> -webkit-transform <span class="number">0.5s</span> ease-out</span></span>; 
 <span class="rule"><span class="attribute">-moz-transition</span>:<span class="value"> -moz-transform <span class="number">0.5s</span> ease-out</span></span>;
 <span class="rule"><span class="attribute">-o-transition</span>:<span class="value"> -o-transform <span class="number">0.5s</span> ease-out</span></span>;
 <span class="rule"><span class="attribute">-ms-transition</span>:<span class="value"> -ms-transform <span class="number">0.5s</span> ease-out</span></span>;
-}
+}</span>
 <span class="class">.character360</span><span class="pseudo">:hover</span> <span class="rules">{
 <span class="comment">/* transform 旋转div元素 */</span>
 <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">rotateZ</span>(<span class="number">360deg</span>)</span></span>; 
@@ -112,8 +161,21 @@
 <span class="rule"><span class="attribute">-ms-transform</span>:<span class="value"> <span class="function">rotateZ</span>(<span class="number">360deg</span>)</span></span>;
 <span class="rule"><span class="attribute">transform</span>:<span class="value"> <span class="function">rotateZ</span>(<span class="number">360deg</span>)</span></span>;
 }</span>
-</code></pre><p>以下是HTML中的代码：<br>    &lt;!DOCTYPE html&gt;<br>    <html><br>    <head><br>    <meta charset="utf-8"><br>    <title>测试鼠标悬停360°旋转效果</title><br>    <link rel="stylesheet" type="text/css" href="360.css"><br>    <style><br>    </style><br>    </head><br>    <body><br>     <div class="character360"></div><br>    </body><br>    </html></p>
-<p>以上。</p>
+</code></pre><p>以下是HTML中的代码：</p>
+<pre><code><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>/&gt;</span>
+<span class="tag">&lt;<span class="title">title</span>&gt;</span>测试鼠标悬停360°旋转效果<span class="tag">&lt;/<span class="title">title</span>&gt;</span>    
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"360.css"</span>/&gt;</span>
+<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"character360"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre><p>以上。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
